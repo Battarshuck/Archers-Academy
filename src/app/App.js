@@ -132,7 +132,7 @@ class App extends Component {
             {this.AnnouncementCreater()}
 
           </div>
-        </div>
+        </div> 
 
         <div className="sectionLight">
           <div className="coachSection">
