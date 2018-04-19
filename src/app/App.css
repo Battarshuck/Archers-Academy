@@ -103,8 +103,19 @@ div .PersonnelNavbar {
 
 .announcementSection {
   background-color: white;
-  height: 20rem;
   margin-top: 2rem;
+}
+
+div .footer {
+  bottom: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+  height: 120px;
+}
+
+.fa-facebook-square {
+  color: #3b5998;
+  margin: 15px;
 }
 
 /* Media queries */

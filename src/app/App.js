@@ -128,11 +128,13 @@ class App extends Component {
             <div className="header">
               <h1>Announcements <span class="badge badge-danger">New</span></h1>
             </div>
-
-            {this.AnnouncementCreater()}
-
+            <div className="wrapper">
+              {this.AnnouncementCreater()}
+            </div>
           </div>
-        </div> 
+        </div>
+
+        <hr></hr>
 
         <div className="sectionLight">
           <div className="coachSection">
@@ -151,6 +153,7 @@ class App extends Component {
                 sit amet fermentum.</p>
                   </div>
                 </div>
+                <hr></hr>
                 <div className="coach2">
                   <div className="row">
                     <p className="text-justify col-md-9">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae,
@@ -165,6 +168,10 @@ class App extends Component {
               <div className="col-md-2"></div>
             </div>
           </div>
+        </div>
+
+        <div className="footer">
+          <i className="fab fa-facebook-square"></i>
         </div>
       </div>
     );
