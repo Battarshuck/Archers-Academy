@@ -66,6 +66,7 @@ bordy {
   padding-top: 3rem; 
 }
 
+/* Navbar */
 div .PersonnelNavbar {
   padding: 0; 
 }
@@ -106,16 +107,28 @@ div .PersonnelNavbar {
   margin-top: 2rem;
 }
 
+/* ------------------- Footer ----------------- */
 div .footer {
   bottom: 0;
   width: 100%;
   background-color: #f2f2f2;
-  height: 120px;
 }
 
-.fa-facebook-square {
-  color: #3b5998;
+.socialWrapper {
+  float: left;
   margin: 15px;
+}
+
+.facebookIcon {
+  color: #3b5998;
+}
+
+.instagramIcon {
+  color: #fb3958
+}
+
+.socialIcons {
+  margin: 10px;
 }
 
 /* Media queries */

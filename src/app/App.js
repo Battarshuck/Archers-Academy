@@ -171,7 +171,15 @@ class App extends Component {
         </div>
 
         <div className="footer">
-          <i className="fab fa-facebook-square"></i>
+          <div className="row">
+            <div className="col-md-9 col-sm-12">
+              <div className="socialWrapper">
+                <a href="https://www.facebook.com/archersacademy.eg/" target="_blank"><i class="fa fa-facebook-official fa-4x facebookIcon socialIcons" aria-hidden="true"></i></a>
+                <a href="https://www.instagram.com/archers_academy_egypt/" target="_blank"><i class="fa fa-instagram fa-4x socialIcons instagramIcon" aria-hidden="true"></i></a>
+              </div>
+            </div>
+            <div className="col-md-4"></div>
+          </div>
         </div>
       </div>
     );
