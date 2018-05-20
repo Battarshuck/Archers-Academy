@@ -30,56 +30,56 @@
 
 
 bordy {
-  margin: none; 
+  margin: none;
 }
 
 .imgMain {
-  width: 100%; 
+  width: 100%;
 }
 
 .bigIMG {
   display: block;
-  margin: auto; 
+  margin: auto;
 }
 
 .sectionColor {
   /* background-image: url(../assets/player.webp);
   background-repeat: no-repeat;
   background-size: cover; */
-  padding-bottom: 4rem; 
-  background-color: #f2f2f2; 
+  padding-bottom: 4rem;
+  background-color: #f2f2f2;
 }
 
 #mainSection {
   margin: auto;
-  padding-top: 3rem; 
+  padding-top: 3rem;
 }
 
 .jumbotronModified {
   text-align: center;
-  background: transparent; 
+  background: transparent;
 }
 
 
 
 .coachSection {
-  padding-top: 3rem; 
+  padding-top: 3rem;
 }
 
 /* Navbar */
 div .PersonnelNavbar {
-  padding: 0; 
+  padding: 0;
 }
 
 .navbarcolor {
   background-color: #ffffff;
   -webkit-box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.17);
   -moz-box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.17);
-  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.17); 
+  box-shadow: 0px 2px 5px 2px rgba(0, 0, 0, 0.17);
 }
 
 .navpadding {
-  padding-left: 5rem; 
+  padding-left: 5rem;
 }
 
 /* Annoucement */
@@ -91,13 +91,13 @@ div .PersonnelNavbar {
 /* coachs section */
 
 .sectionLight {
-  background-color: #ffffff; 
+  background-color: #ffffff;
   margin-top: 3rem;
   margin-bottom: 5rem;
 }
 
 .coach1 {
-  margin-bottom: 4rem; 
+  margin-bottom: 4rem;
 }
 
 /* announcement Section */
@@ -116,7 +116,7 @@ div .footer {
 
 .socialWrapper {
   float: left;
-  margin: 15px;
+  margin: 9px 15px 0;
 }
 
 .facebookIcon {
@@ -129,6 +129,20 @@ div .footer {
 
 .socialIcons {
   margin: 10px;
+}
+
+.followFooter {
+  float: left;
+  margin: 6px 15px 0;
+}
+
+/* coachs section */
+.coach1 img {
+  padding: 0;
+}
+
+.coach2 img {
+  padding: 0;
 }
 
 /* Media queries */

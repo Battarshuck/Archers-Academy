@@ -20,25 +20,59 @@ class App extends Component {
         {
           'title': 'well done!',
           'description': 'Aww yeah, you successfully read this important alert message. This example text is going to run a bit longer so that you can see how spacing within an alert works with this kind of content.',
-          'note': 'Whenever you need to, be sure to use margin utilities to keep things nice and tidy.'
+          'note': 'Whenever you need to, be sure to use margin utilities to keep things nice and tidy.',
+          'key': '1'
         },
         {
           'title': 'test',
           'description': 'test',
-          'note': 'test'
+          'note': 'test',
+          'key':'2'
+        },
+        {
+          'title': 'test2',
+          'description': 'test2',
+          'note': 'test2',
+          'key':'3'
+        },
+        {
+          'title': 'test3',
+          'description': 'test3',
+          'note': 'test3',
+          'key':'4'
+        },
+        {
+          'title': 'test4',
+          'description': 'test4',
+          'note': 'test4',
+          'key':'5'
         }
       ]
     };
 
+
     //bind functions
+    this.AnnoucementsLimiter();
     this.AnnouncementCreater = this.AnnouncementCreater.bind(this);
+
   }
 
   AnnouncementCreater = () => {
     const list = this.state.Announcements.map((announcement) =>
-      <Announcement title={announcement.title} description={announcement.description} note={announcement.note} />
+      <Announcement title={announcement.title} description={announcement.description} note={announcement.note} key={announcement.key} />
     );
     return (list);
+  }
+
+  AnnoucementsLimiter = () => {
+    for (var i = 0; i <= this.state.Announcements.length; i++) {
+      if (i = this.state.Announcements.length) {
+        this.state.Announcements.splice(0, i-1);
+        // console.log(i);
+        // console.log(this.state.Announcements);
+        break;
+      }
+    }
   }
 
   render() {
@@ -126,7 +160,7 @@ class App extends Component {
         <div className="announcementSection">
           <div className="container-fluid">
             <div className="header">
-              <h1>Announcements <span class="badge badge-danger">New</span></h1>
+              <h1>Announcements <span className="badge badge-danger">New</span></h1>
             </div>
             <div className="wrapper">
               {this.AnnouncementCreater()}
@@ -146,11 +180,11 @@ class App extends Component {
               <div className="col-md-8">
                 <div className="coach1">
                   <div className="row">
-                    <img className="col-md-3" src="https://scontent-cai1-1.xx.fbcdn.net/v/t1.0-1/c0.0.160.160/p160x160/16938901_178531519315713_1326279842698755678_n.jpg?_nc_cat=0&oh=1fb756de7e63be365467d40b68466c45&oe=5B75D0F5"></img>
+                    <img className="col-md-3 rounded float-left coach1img" src="https://scontent-cai1-1.xx.fbcdn.net/v/t1.0-1/c0.0.160.160/p160x160/16938901_178531519315713_1326279842698755678_n.jpg?_nc_cat=0&oh=1fb756de7e63be365467d40b68466c45&oe=5B75D0F5"></img>
                     <p className="col-md-9 text-justify">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae,
                       eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis
                       piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis iudicium purus
-                sit amet fermentum.</p>
+                      sit amet fermentum.</p>
                   </div>
                 </div>
                 <hr></hr>
@@ -159,8 +193,8 @@ class App extends Component {
                     <p className="text-justify col-md-9">Ambitioni dedisse scripsisse iudicaretur. Cras mattis iudicium purus sit amet fermentum. Donec sed odio operae,
                       eu vulputate felis rhoncus. Praeterea iter est quasdam res quas ex communi. At nos hinc posthac, sitientis
                       piros Afros. Petierunt uti sibi concilium totius Galliae in diem certam indicere. Cras mattis iudicium purus
-                sit amet fermentum.</p>
-                    <img className="col-md-3" src="https://scontent-cai1-1.xx.fbcdn.net/v/t1.0-1/p160x160/13770380_10157285747545145_4019445058020303100_n.jpg?_nc_cat=0&oh=a91abb44330e5e93af8fa34c9a589220&oe=5B6A8478"></img>
+                      sit amet fermentum.</p>
+                    <img className="col-md-3 rounded float-right" src="https://scontent-cai1-1.xx.fbcdn.net/v/t1.0-1/p160x160/13770380_10157285747545145_4019445058020303100_n.jpg?_nc_cat=0&oh=a91abb44330e5e93af8fa34c9a589220&oe=5B6A8478"></img>
                   </div>
                 </div>
               </div>
@@ -172,12 +206,17 @@ class App extends Component {
 
         <div className="footer">
           <div className="row">
-            <div className="col-md-9 col-sm-12">
-              <div className="socialWrapper">
-                <a href="https://www.facebook.com/archersacademy.eg/" target="_blank"><i class="fa fa-facebook-official fa-4x facebookIcon socialIcons" aria-hidden="true"></i></a>
-                <a href="https://www.instagram.com/archers_academy_egypt/" target="_blank"><i class="fa fa-instagram fa-4x socialIcons instagramIcon" aria-hidden="true"></i></a>
+            <div className="col-md-12">
+              <div className="followFooter">
+                  <h4>follow us on:</h4>
               </div>
             </div>
+              <div className="col-md-9 col-sm-12">
+                <div className="socialWrapper">
+                  <a href="https://www.facebook.com/archersacademy.eg/" target="_blank"><i className="fa fa-facebook-official fa-2x facebookIcon socialIcons" aria-hidden="true"></i></a>
+                  <a href="https://www.instagram.com/archers_academy_egypt/" target="_blank"><i className="fa fa-instagram fa-2x socialIcons instagramIcon" aria-hidden="true"></i></a>
+                </div>
+              </div>
             <div className="col-md-4"></div>
           </div>
         </div>
