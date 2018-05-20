@@ -14,6 +14,6 @@ tether v1.3.3
 -The skateboard pictures are just a prototype. 
 
  
--The annoucements section is fully dynamic, that means while it seems that one annoucement takes place (test 4 in this example),  the array contains 5 annoucements but the website is going to only show the newest one.
+-The annoucements section is fully dynamic, that means while it seems that one annoucement is taking place (test 4 in this example),  the array contains 5 annoucements but the website is going to only show the newest one.
 
 
